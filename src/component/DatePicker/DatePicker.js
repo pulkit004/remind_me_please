@@ -2,6 +2,7 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import './DatePicker.css';
+import ReminderList from '../ReminderList/ReminderList';
 
 let oneDay = 60 * 60 * 24 * 1000;
 let todayTimestamp = Date.now() - (Date.now() % oneDay) + (new Date().getTimezoneOffset() * 1000 * 60);
@@ -9,16 +10,13 @@ let inputRef = React.createRef();
 
 export default class MyDatePicker extends Component {
 
-    state = {
-        getMonthDetails: []
-    }
-
     constructor() {
         super();
         let date = new Date();
         let year = date.getFullYear();
         let month = date.getMonth();
         this.state = {
+            getMonthDetails: [],
             year,
             month,
             selectedDay: todayTimestamp,
@@ -226,7 +224,7 @@ export default class MyDatePicker extends Component {
                 <div className='mdp-input' onClick={()=> this.showDatePicker(true)}>
                     <input type='date' onChange={this.updateDateFromInput} ref={inputRef}/>
                 </div>
-                    <div className='mdp-container'>
+                <div className='mdp-container'>
                         <div className='mdpc-head'>
                             <div className='mdpch-button'>
                                 <div className='mdpchb-inner' onClick={()=> this.setYear(-1)}>
@@ -255,8 +253,13 @@ export default class MyDatePicker extends Component {
                         </div>
                         <div className='mdpc-body'>
                             {this.renderCalendar()}
+                            
                         </div>
+
                     </div>
+                            <ReminderList />
+
+
             </div>
         )
     }

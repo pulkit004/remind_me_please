@@ -1,0 +1,17 @@
+.ReminderList{
+   width: 100%;
+    background:#009865;
+    box-shadow: 10px 10px 40px rgba(0,0,0,0.2);
+    border-radius: 0 0 20px 20px;
+    overflow: hidden;
+    padding: 25px 30px;
+    color: #FFF;
+
+}
+
+.ReminderList .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+  
+}

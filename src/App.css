@@ -1,7 +1,17 @@
 .App {
-  float: left;
-  padding: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+  background-color: #03254c;
+  height: 100%;
 } 
 .App * {
   font-family: 'Open Sans', sans-serif;
+}
+
+@media(max-width: 768px){
+   .App {
+  padding: 20px;
+} 
 }

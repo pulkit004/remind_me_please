@@ -1,7 +1,13 @@
 
 .MyDatePicker {
-    float: left;
     position: relative;
+    width: 25%;
+}
+
+@media(max-width: 768px){
+    .MyDatePicker {
+    width: 100%;
+}
 }
 .MyDatePicker * {
     -webkit-touch-callout: none; /* iOS Safari */
@@ -32,22 +38,17 @@
 }
 
 .mdp-container {
-    float: left;
-    position: absolute;
-    left:0;
-    top: 40px;
-    width: 300px;
-    min-height: 350px;
+    width: 100%;
     background: #fff;
     box-shadow: 10px 10px 40px rgba(0,0,0,0.2);
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
     overflow: hidden;
     padding: 25px 30px;
 }
 .mdpc-head{
-    float: left;
-    width: 100%;
-    height: 53px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .mdpc-body{
     float: left;
@@ -258,5 +259,6 @@
     background: #efdbca;
 }
 .c-day-container.highlight-green .cdc-day span{
-    background: #d4e2cb;
+    background: #009865;
+    color: #FFF;
 }
