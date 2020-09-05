@@ -1,0 +1,7 @@
+.App {
+  float: left;
+  padding: 200px;
+} 
+.App * {
+  font-family: 'Open Sans', sans-serif;
+}
