@@ -17,8 +17,8 @@
 }
 .ReminderList .list-body {
     margin-top: 2rem;
-    min-height: 100px;
-    height: 100px;
+    min-height: 150px;
+    height: 150px;
     overflow: auto;
 }
 .ReminderList .list-body > ul{

@@ -155,7 +155,7 @@ export default class MyDatePicker extends Component {
         inputRef.current.value = dateString;
     }
 
-    onDateClick =day=> {
+    onDateClick = day => {
         this.setState({selectedDay: day.timestamp}, ()=>this.setDateToInput(day.timestamp));
         if(this.props.onChange) {
             this.props.onChange(day.timestamp);

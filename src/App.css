@@ -13,9 +13,27 @@
 .mb-2{
   margin-bottom: 1rem;
 }
+
+.my-2{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 .cursor-pointer{
   cursor: pointer;
 }
+.lead{
+  font-size: 18px;
+}
+
+.d-flex{
+  display: flex;
+} .flex-row{
+  flex-direction: row;
+  } .align-items-center{
+  align-items: center;
+      }
+
+
 @media(max-width: 768px){
    .App {
   padding: 20px;
