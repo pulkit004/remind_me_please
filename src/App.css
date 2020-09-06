@@ -21,6 +21,9 @@
 .cursor-pointer{
   cursor: pointer;
 }
+.lead{
+  font-size: 18px;
+}
 @media(max-width: 768px){
    .App {
   padding: 20px;

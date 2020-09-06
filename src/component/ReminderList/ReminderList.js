@@ -25,7 +25,11 @@ class ReminderList extends Component {
   add = () => {
     const {item, location, time, reminderList} = this.state;
     const {selectedDate} = this.props;
-    reminderList.unshift({item, selectedDate, location, time});
+
+    if(reminderList?.find(it => it.selectedDate === selectedDate)){
+      let existingObject = reminderList?.find(it => it.selectedDate === selectedDate)
+    }
+    reminderList.push({item, selectedDate, location, time});
     Locker.set('reminderList', reminderList);
     this.setState({reminderList});
   };
@@ -49,12 +53,12 @@ class ReminderList extends Component {
           <div className="my-2" />
           <span>Location</span>
 
-          <Input name={'location'} value={location} onChange={(e) => this.change(e, 'location')} placeholder="Meet Kunal at Bangalore HQ" />
+          <Input name={'location'} value={location} onChange={(e) => this.change(e, 'location')} placeholder="Bangalore HQ" />
           <div className="my-2" />
 
           <span>Time</span>
 
-          <Input name={'time'} value={time} onChange={(e) => this.change(e, 'time')} placeholder="Meet Kunal at Bangalore HQ" />
+          <Input name={'time'} value={time} onChange={(e) => this.change(e, 'time')} placeholder="11" />
           <div className="my-2" />
 
           <Button type={'primary'} onClick={this.add}>Add</Button>
@@ -62,7 +66,7 @@ class ReminderList extends Component {
       </Modal>
       <div className="header">
         <div>
-          This saturday
+
         </div>
         <div>
                <span className={'cursor-pointer'} onClick={() => this.setState({visible: true})}>
@@ -73,13 +77,20 @@ class ReminderList extends Component {
 
       <div className="list-body">
         <ul>
-          {reminderList?.map(it => <li className={'mb-2'}>
+          {reminderList?.sort((a,b) => b.selectedDate-a.selectedDate).map((it, index) => <li key={it?.name + `${index}`} className={'mb-2'}>
+            <p className={'lead'}>
+              {dayjs(it?.selectedDate).format('DD MMM')}
+
+            </p>
             <p>
               {it?.item}
             </p>
             <p>
-              {dayjs.unix(it?.selectedDate).format('DD MMM')}
+              {it?.location}
+            </p>
 
+            <p>
+              {it?.time}
             </p>
           </li>)}
         </ul>
