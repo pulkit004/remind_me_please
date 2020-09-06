@@ -13,6 +13,11 @@
 .mb-2{
   margin-bottom: 1rem;
 }
+
+.my-2{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 .cursor-pointer{
   cursor: pointer;
 }
