@@ -24,6 +24,16 @@
 .lead{
   font-size: 18px;
 }
+
+.d-flex{
+  display: flex;
+} .flex-row{
+  flex-direction: row;
+  } .align-items-center{
+  align-items: center;
+      }
+
+
 @media(max-width: 768px){
    .App {
   padding: 20px;
