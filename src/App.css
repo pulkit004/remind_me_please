@@ -10,6 +10,12 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+.mb-2{
+  margin-bottom: 1rem;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
 @media(max-width: 768px){
    .App {
   padding: 20px;

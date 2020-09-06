@@ -54,7 +54,7 @@ class ReminderList extends Component {
               This saturday
             </div>
             <div>
-               <span onClick={() => this.setState({visible: true})}>
+               <span className={'cursor-pointer'} onClick={() => this.setState({visible: true})}>
                    Add new
                </span>
             </div>
@@ -63,7 +63,7 @@ class ReminderList extends Component {
           <div className="list-body">
             <ul>
               {
-                reminderList?.map(it => <li>
+                reminderList?.map(it => <li className={'mb-2'}>
                  <p>
                    {it?.item}
                  </p>
