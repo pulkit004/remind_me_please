@@ -9,11 +9,22 @@
 .App * {
   font-family: 'Open Sans', sans-serif;
 }
-
+.ant-modal-content{
+  border-radius: 16px !important;
+}
+.ant-modal-header{
+  border-radius: 16px 16px 0 0 !important;
+}
 .mb-2{
   margin-bottom: 1rem;
 }
+input[type='text']{
+  border-radius: 16px;
+}
+button{
+  border-radius: 16px !important;
 
+}
 .my-2{
   margin-top: 2rem;
   margin-bottom: 2rem;

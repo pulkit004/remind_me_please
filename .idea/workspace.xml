@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b03bc67-7991-46c5-930e-5728a8ab6e67" name="Default Changelist" comment="" />
+    <list default="true" id="9b03bc67-7991-46c5-930e-5728a8ab6e67" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/DatePicker/DatePicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/DatePicker/DatePicker.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/DatePicker/DatePicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/DatePicker/DatePicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/ReminderList/ReminderList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ReminderList/ReminderList.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/ReminderList/ReminderList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ReminderList/ReminderList.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,7 +52,7 @@
       <option name="presentableId" value="Default" />
       <updated>1599364740023</updated>
       <workItem from="1599364741962" duration="9927000" />
-      <workItem from="1599410282435" duration="1592000" />
+      <workItem from="1599410282435" duration="5036000" />
     </task>
     <servers />
   </component>
@@ -60,10 +67,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="368" y="83" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1440.877@0.23.1440.877" timestamp="1599411898074" />
-    <state x="469" y="218" width="670" height="561" key="search.everywhere.popup" timestamp="1599412031202">
+    <state x="469" y="218" width="670" height="561" key="search.everywhere.popup" timestamp="1599415274914">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="2065" y="192" width="670" height="676" key="search.everywhere.popup/0.23.1440.877/1440.-43.1920.1057@1440.-43.1920.1057" timestamp="1599394223088" />
-    <state x="469" y="218" width="670" height="561" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1599412031202" />
+    <state x="469" y="218" width="670" height="561" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1599415274914" />
   </component>
 </project>

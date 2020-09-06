@@ -186,7 +186,7 @@
 .cc-month{ 
     height: 30px;
     width: 100%;
-    font-family: Roboto;
+    font-family: 'Roboto', serif;
     font-size: 16px;
     line-height: 30px;
     color: #666;
@@ -195,6 +195,7 @@
     height: 30px;
     width: 100%;
     margin-top: 10px;
+    margin-bottom: 3rem;
 }
 .cch-name{ 
     width: 14.285%;
@@ -221,7 +222,7 @@
     color: #444;
     text-align: center;
 }
-.cdc-day span{ 
+.cdc-day span{
     width: 100%;
     height: 100%;
     font-size: 12px;
