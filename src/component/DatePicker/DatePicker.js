@@ -188,9 +188,6 @@ export default class MyDatePicker extends Component {
         })
     }
 
-    /**
-     *  Renderers
-     */
 
     renderCalendar() {
         let days = this.state.monthDetails.map((day, index)=> {
@@ -242,12 +239,12 @@ export default class MyDatePicker extends Component {
                             </div>
                             <div className='mdpch-button'>
                                 <div className='mdpchb-inner' onClick={()=> this.setMonth(1)}>
-                                    <span className='mdpchbi-right-arrow'></span>
+                                    <span className='mdpchbi-right-arrow' />
                                 </div>
                             </div>
                             <div className='mdpch-button' onClick={()=> this.setYear(1)}>
                                 <div className='mdpchb-inner'>
-                                    <span className='mdpchbi-right-arrows'></span>
+                                    <span className='mdpchbi-right-arrows' />
                                 </div>
                             </div>
                         </div>
@@ -257,7 +254,7 @@ export default class MyDatePicker extends Component {
                         </div>
 
                     </div>
-                            <ReminderList />
+                            <ReminderList selectedDate={this.state.selectedDay} />
 
 
             </div>
