@@ -44,14 +44,9 @@ export default class MyDatePicker extends Component {
       reminderList: Locker.get('reminderList') || [],
     };
   }
-
-  componentDidUpdate(prevProps, prevState, snapshot) {
-    if(prevState.reminderList !== this.state.reminderList){
-      this.setState({
-        reminderList: Locker.get('reminderList')
-      })
-    }
-  }
+  updateCalender = () => this.setState({
+          reminderList: Locker.get('reminderList')
+  })
 
   componentDidMount() {
     window.addEventListener('click', this.addBackDrop);
@@ -297,7 +292,7 @@ export default class MyDatePicker extends Component {
         </div>
 
       </div>
-      <ReminderList selectedDate={this.state.selectedDay} />
+      <ReminderList updateCalender={this.updateCalender} selectedDate={this.state.selectedDay} />
 
 
     </div>);

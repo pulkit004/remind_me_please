@@ -19,15 +19,14 @@ class ReminderList extends Component {
     const {state} = this;
     state[name] = event.target.value;
     this.setState({
-      state,
+      state
     });
   };
 
   openNotificationWithIcon = (type, date) => {
     notification[type]({
       message: 'Reminder added successfully!',
-      description:
-          `Your reminder for ${dayjs(date).format('MMM  DD, YY')} is added successfully.`,
+      description: `Your reminder for ${dayjs(date).format('MMM  DD, YY')} is added successfully.`,
     });
   };
 
@@ -51,6 +50,7 @@ class ReminderList extends Component {
     Locker.set('reminderList', reminderList);
     this.setState({reminderList, visible: false});
     this.openNotificationWithIcon('success', selectedDate)
+    this.props.updateCalender()
   };
 
   render() {

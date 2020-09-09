@@ -6,6 +6,7 @@
   background-color: #03254c;
   height: 100vh;
 } 
+
 .App * {
   font-family: 'Open Sans', sans-serif;
 }
@@ -48,5 +49,6 @@ button{
 @media(max-width: 768px){
    .App {
   padding: 20px;
+  height: 100%;
 } 
 }
